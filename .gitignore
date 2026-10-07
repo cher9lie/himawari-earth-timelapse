@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+workspace/
+downloads/
+config.json
+*.mp4
+*.bin
+*.log
+.env*
+token.json
+sessions.json

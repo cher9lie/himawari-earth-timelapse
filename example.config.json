@@ -1,0 +1,18 @@
+{
+  "start": "2026-07-01",
+  "end": "2026-08-01",
+  "interval_minutes": 10,
+  "fps": 15,
+  "width": 1920,
+  "height": 1080,
+  "timezone_offset": 8,
+  "crf": 18,
+  "preset": "medium",
+  "workers": 8,
+  "workspace": "./workspace",
+  "download_dir": "./downloads",
+  "save_root": "/content/drive/MyDrive/EarthTimelapse",
+  "scratch": "/content/earth_video_work",
+  "session": "earth-timelapse",
+  "output_name": "earth_timelapse.mp4"
+}

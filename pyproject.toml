@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "himawari-earth-timelapse"
+version = "0.1.0"
+description = "Configurable Himawari day/night timelapse with Colab, checkpoints and verified downloads"
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10,<13", "numpy>=1.26,<3", "requests>=2.31,<3"]
+license = "MIT"
+
+[project.optional-dependencies]
+colab = ["google-colab-cli==0.7.4"]
+
+[project.scripts]
+earth-video = "himawari_timelapse.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["himawari_timelapse*"]
