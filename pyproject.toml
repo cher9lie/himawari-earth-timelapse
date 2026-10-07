@@ -4,9 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "himawari-earth-timelapse"
-version = "0.1.0"
+version = "0.1.1"
 description = "Configurable Himawari day/night timelapse with Colab, checkpoints and verified downloads"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 dependencies = ["Pillow>=10,<13", "numpy>=1.26,<3", "requests>=2.31,<3"]
 license = "MIT"
 

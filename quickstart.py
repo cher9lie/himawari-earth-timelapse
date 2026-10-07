@@ -6,6 +6,8 @@ import sys
 import venv
 
 root=Path(__file__).resolve().parent
+if sys.version_info < (3,12):
+    raise SystemExit('一键 Colab 入口需要 Python 3.12+，请升级 Python 后重试。')
 os.chdir(root)
 environment=root/'.venv'
 python=environment/('Scripts/python.exe' if os.name=='nt' else 'bin/python')

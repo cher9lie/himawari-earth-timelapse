@@ -92,7 +92,7 @@ def estimate(config, calibration=None):
     sizes = [duration*v*1_000_000/8 for v in bitrate]
     result = dict(frames=config.frames, duration_seconds=duration, tile_requests_minimum=config.frames*8,
                   assumed_bitrate_mbps=bitrate, final_mib=[round(v/2**20, 1) for v in sizes],
-                  drive_peak_mib=round(2*sizes[1]/2**20, 1), scratch_peak_mib=round(3*sizes[1]/2**20+64, 1),
+                  drive_peak_mib=round(3*sizes[1]/2**20, 1), scratch_peak_mib=round(3*sizes[1]/2**20+64, 1),
                   local_download_peak_mib=round(sizes[1]/2**20+96, 1), raw_images_saved=0,
                   time_seconds=None, time_basis="未测量；请运行 benchmark。空间按1080p 6–14 Mbps假设估算，CRF/内容会改变实际大小。")
     if calibration:
